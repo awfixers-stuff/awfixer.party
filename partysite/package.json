@@ -1,5 +1,5 @@
 {
-  "name": "awfixerparty",
+  "name": "partysite",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -12,14 +12,6 @@
     "format": "oxfmt . --fix",
     "typecheck": "tsgo --noEmit",
     "test:browser": "vitest"
-  },
-  "workspaces": {
-    "packages": [
-      ".",
-      "backboard",
-      "mobile",
-      "admin-mobile"
-    ]
   },
   "dependencies": {
     "@ai-sdk/gateway": "^3.0.104",

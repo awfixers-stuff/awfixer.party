@@ -3,10 +3,31 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "workspaces": [
+    ".",
+    "auth",
+    "auth/packages/**",
+    "auth/apps/**",
+    "auth/sdks/**",
+    "auth/sdks/implementations/*",
+    "partysite",
+    "admin",
+    "cms",
+    "backboard",
+    "mobile",
+    "admin-mobile"
+  ],
+  "scripts": {
+    "build:partysite": "bun --filter partysite run build",
+    "build:admin": "bun --filter admin run build",
+    "build:cms": "bun --filter cms run build",
+    "build:backboard": "bun --filter backboard run build"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
-  }
+  },
+  "packageManager": "bun@1.3.11"
 }
