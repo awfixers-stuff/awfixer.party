@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Awfixer Party monorepo](#awfixer-party-monorepo)
+  - [What we are building](#what-we-are-building)
+  - [Architecture at a glance](#architecture-at-a-glance)
+    - [Domain map](#domain-map)
+  - [Features (high level)](#features-high-level)
+  - [Repository layout (top level)](#repository-layout-top-level)
+  - [Development](#development)
+  - [Contributing and tracking work](#contributing-and-tracking-work)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Awfixer Party monorepo
 
 This repository holds the applications and shared code for **Awfixer Party** web and mobile surfaces. Work is organized around a **headless** architecture: public sites and admin tools talk to a single **Backboard** (Cloudflare Worker) that sits in front of **Convex**, which is the **source of truth** for data, queues, and server-side logic.
