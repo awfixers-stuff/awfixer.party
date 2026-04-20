@@ -1,0 +1,31 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "next-devtools": {
+      "type": "local",
+      "command": [
+        "bunx",
+        "next-devtools-mcp@latest"
+      ]
+    },
+    "shadcn": {
+      "type": "local",
+      "command": [
+        "bunx",
+        "shadcn@latest",
+        "mcp"
+      ],
+      "enabled": true
+    },
+    "railway": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@railway/mcp-server"
+      ],
+      "enabled": true,
+      "environment": {}
+    }
+  }
+}

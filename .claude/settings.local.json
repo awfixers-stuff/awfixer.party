@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__next-devtools__init",
+      "mcp__next-devtools__nextjs_index",
+      "mcp__next-devtools__nextjs_call",
+      "mcp__next-devtools__browser_eval",
+      "Bash(awk '{print $NF}')",
+      "Bash(bun install *)",
+      "Bash(bun run *)",
+      "Bash(node *)",
+      "Bash(grep -r \"export.*query\\\\|export.*mutation\\\\|export.*action\" /home/awfixer/Projects/awfixerparty/convex --include=\"*.ts\" ! -path \"*/_generated/*\")",
+      "Bash(bunx convex *)",
+      "Bash(git -C /home/awfixer/Projects/awfixerparty log --oneline --all -- .env.local .env.sentry-build-plugin)",
+      "Bash(xargs -I{} git show {}:.env.local)",
+      "Bash(bun add *)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "next-devtools",
+    "shadcn",
+    "railway"
+  ],
+  "enableAllProjectMcpServers": true
+}

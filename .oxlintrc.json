@@ -1,0 +1,46 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "react", "jsx-a11y", "nextjs"],
+  "categories": {
+    "correctness": "error"
+  },
+  "env": {
+    "browser": true,
+    "builtin": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    "node_modules/**",
+    "convex/_generated/**",
+    ".next/**",
+    "dist/**",
+    "build/**",
+    ".git/**",
+    "*.min.js"
+  ],
+  "rules": {
+    "unicorn/no-invalid-remove-event-listener": "error",
+    "unicorn/require-array-join-separator": "off",
+    "unicorn/prefer-add-event-listener": "off",
+    "jsx-a11y/prefer-tag-over-role": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "nextjs/no-img-element": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx", "**/*.spec.ts", "**/*.spec.tsx"],
+      "rules": {
+        "typescript/no-unused-vars": "off"
+      }
+    },
+    {
+      "files": ["**/convex/**/*.ts"],
+      "rules": {
+        "no-unused-vars": "off"
+      }
+    }
+  ]
+}

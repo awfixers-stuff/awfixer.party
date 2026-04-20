@@ -1,0 +1,41 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "semi": true,
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "insertFinalNewline": true,
+  "objectWrap": "preserve",
+  "quoteProps": "as-needed",
+  "singleAttributePerLine": false,
+  "htmlWhitespaceSensitivity": "css",
+  "proseWrap": "preserve",
+  "embeddedLanguageFormatting": "auto",
+  "sortImports": true,
+  "sortPackageJson": true,
+  "ignorePatterns": [
+    "node_modules/**",
+    "convex/_generated/**",
+    ".next/**",
+    "dist/**",
+    "build/**",
+    ".git/**",
+    "*.min.js"
+  ],
+  "overrides": [
+    {
+      "files": ["*.md", "*.mdx"],
+      "proseWrap": "preserve"
+    },
+    {
+      "files": ["*.json"],
+      "sortPackageJson": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "extends": "./node_modules/nitro/lib/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@controllers/*": ["./server/controllers/*"],
+      "@helpers/*": ["./server/helpers/*"],
+      "@middlewares/*": ["./server/middleware/*"],
+      "@models/*": ["./server/models/*"],
+      "@routes/*": ["./server/routes/*"],
+      "@utils/*": ["./server/utils/*"],
+      "@validations/*": ["./server/validations/*"],
+      "@services/*": ["./server/services/*"],
+      "@logger": ["./server/utils/logger.ts"]
+    }
+  },
+  "include": ["server/**/*", "nitro.config.ts", "types/**/*"]
+}

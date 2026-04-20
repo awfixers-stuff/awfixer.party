@@ -1,0 +1,24 @@
+# Nitro backboard — BFF under `/api/v1/**`.
+#
+# Railway: second service from the same repo, set Config-as-code path to
+# `/backboard/railway.toml`. Name this service `backboard` so it resolves as
+# `backboard.railway.internal` for private networking.
+#
+# Build uses the monorepo root (shared bun.lock + convex/). Root directory in
+# Railway should stay `/` (repository root).
+
+[build]
+builder = "RAILPACK"
+buildCommand = "bun install --frozen-lockfile && bun run --cwd backboard build"
+watchPatterns = [
+  "/package.json",
+  "/bun.lock",
+  "/convex/**",
+  "/backboard/**",
+]
+
+[deploy]
+# Nitro reads HOST for the listen address (IPv4+IPv6 on Railway).
+startCommand = "HOST=:: bun run --cwd backboard start"
+healthcheckPath = "/api/v1"
+restartPolicyType = "ON_FAILURE"

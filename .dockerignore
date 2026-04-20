@@ -1,0 +1,25 @@
+# Railpack / Railway build context — keep images small and skip mobile workspaces.
+# https://railpack.com/config/excluding-files/
+
+node_modules
+.git
+.next
+out
+build
+coverage
+*.tsbuildinfo
+
+.env
+.env.*
+!.env.example
+example.env
+
+# Not deployed to Railway (Expo apps — use EAS or omit from this project).
+mobile
+admin-mobile
+
+.cursor
+.zed
+.gemini
+.claude
+.agents
