@@ -13,13 +13,14 @@
       "Bash(bunx convex *)",
       "Bash(git -C /home/awfixer/Projects/awfixerparty log --oneline --all -- .env.local .env.sentry-build-plugin)",
       "Bash(xargs -I{} git show {}:.env.local)",
-      "Bash(bun add *)"
+      "Bash(bun add *)",
+      "Bash(bun --bun install)"
     ]
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "next-devtools",
     "shadcn",
     "railway"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }

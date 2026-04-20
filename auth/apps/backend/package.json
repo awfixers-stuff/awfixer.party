@@ -51,9 +51,6 @@
     "run-email-queue": "pnpm run with-env:dev tsx scripts/run-email-queue.ts",
     "run-bulldozer-studio": "pnpm run with-env:dev tsx watch --clear-screen=false scripts/run-bulldozer-studio.ts"
   },
-  "prisma": {
-    "seed": "pnpm run db-seed-script"
-  },
   "dependencies": {
     "@ai-sdk/mcp": "^1.0.21",
     "spacetimedb": "^2.1.0",
@@ -75,11 +72,6 @@
     "@opentelemetry/sdk-trace-node": "^1.26.0",
     "@opentelemetry/semantic-conventions": "^1.27.0",
     "@oslojs/otp": "^1.1.0",
-    "@prisma/adapter-neon": "^7.0.0",
-    "@prisma/adapter-pg": "^7.0.0",
-    "@prisma/client": "^7.0.0",
-    "@prisma/extension-read-replicas": "^0.5.0",
-    "@prisma/instrumentation": "^7.0.0",
     "@react-email/render": "^1.2.1",
     "@sentry/nextjs": "^10.45.0",
     "@simplewebauthn/server": "^13.3.0",
@@ -133,7 +125,6 @@
     "concurrently": "^8.2.2",
     "glob": "^10.4.1",
     "import-in-the-middle": "1.14.2",
-    "prisma": "^7.0.0",
     "require-in-the-middle": "^7.4.0",
     "rimraf": "^5.0.5",
     "tsdown": "^0.20.3",
