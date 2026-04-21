@@ -130,7 +130,7 @@ RUN npx esbuild src/index.ts --bundle --platform=node --target=node22 --outfile=
 # ── Service binary stages ─────────────────────────────────────────────────────
 
 FROM stripe/stripe-mock:v0.195.0 AS stripe-mock-bin
-FROM inbucket/inbucket:3.1.0 AS inbucket-bin
+FROM inbucket/inbucket:3.1.1 AS inbucket-bin
 FROM svix/svix-server:v1.88.0 AS svix-bin
 FROM clickhouse/clickhouse-server:25.10 AS clickhouse-bin
 FROM minio/minio:RELEASE.2025-09-07T16-13-09Z AS minio-bin
