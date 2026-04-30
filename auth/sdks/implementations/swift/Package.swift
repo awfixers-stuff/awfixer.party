@@ -18,7 +18,7 @@ let package = Package(
     ],
     dependencies: [
         // Cross-platform crypto (provides CryptoKit API on Linux)
-        .package(url: "https://github.com/apple/swift-crypto.git", from: "3.0.0"),
+        .package(url: "https://github.com/apple/swift-crypto.git", from: "3.15.1"),
     ],
     targets: [
         .target(
