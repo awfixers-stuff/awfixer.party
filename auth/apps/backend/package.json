@@ -127,7 +127,7 @@
     "import-in-the-middle": "1.14.2",
     "require-in-the-middle": "^7.4.0",
     "rimraf": "^5.0.5",
-    "tsdown": "^0.20.3",
+    "tsdown": "^0.22.0",
     "tsx": "^4.7.2"
   },
   "packageManager": "pnpm@10.23.0"
