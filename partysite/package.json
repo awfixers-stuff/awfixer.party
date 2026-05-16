@@ -111,7 +111,7 @@
     "@vitest/browser-playwright": "^4.1.4",
     "eslint": "^9.39.4",
     "eslint-config-next": "16.1.7",
-    "oxfmt": "^0.45.0",
+    "oxfmt": "^0.50.0",
     "oxlint": "^1.60.0",
     "postcss": "^8",
     "prettier": "^3.8.1",
